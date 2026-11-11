@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz - Tienda de plantas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor barra">
+      <a href="#inicio" class="logo"><img src="img/logo.svg" alt="" width="30" height="30"> Raíz</a>
+      <nav id="menu">
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="acciones">
+        <button id="btnCarrito" class="btn-carrito">🛒 Carrito <span id="cantidad">0</span></button>
+        <button id="btnMenu" class="btn-menu" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="portada">
+      <div class="contenedor portada-grid">
+        <div class="portada-texto">
+          <h1>Plantas para darle vida a tu casa</h1>
+          <p>Escoge según la luz de tu espacio. Te llegan con maceta y tierra en 48 horas.</p>
+          <a href="#productos" class="boton">Ver productos</a>
+          <a href="#contacto" class="boton boton-claro">Pedir asesoría</a>
+        </div>
+        <img src="img/hero.svg" alt="Plantas en macetas de colores">
+      </div>
+    </section>
+
+    <section id="productos" class="contenedor seccion">
+      <h2>Nuestros productos</h2>
+      <div class="filtros">
+        <button class="filtro activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="sombra">Poca luz</button>
+        <button class="filtro" data-filtro="sol">Mucha luz</button>
+        <button class="filtro" data-filtro="maceta">Macetas</button>
+      </div>
+      <div class="productos">
+        <article class="producto" data-categoria="sombra">
+          <img src="img/producto-1.svg" alt="Sansevieria">
+          <div class="info">
+            <h3>Sansevieria</h3>
+            <p>Aguanta lugares con poca luz. Se riega cada 15 días.</p>
+            <div class="fila">
+              <span class="precio">$38.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Sansevieria" data-precio="38000">Agregar</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto" data-categoria="sombra">
+          <img src="img/producto-2.svg" alt="Pothos">
+          <div class="info">
+            <h3>Pothos</h3>
+            <p>Planta colgante ideal para repisas y estantes.</p>
+            <div class="fila">
+              <span class="precio">$29.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Pothos" data-precio="29000">Agregar</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto" data-categoria="sol">
+          <img src="img/producto-3.svg" alt="Cactus globo">
+          <div class="info">
+            <h3>Cactus globo</h3>
+            <p>Necesita sol directo y muy poca agua.</p>
+            <div class="fila">
+              <span class="precio">$22.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Cactus globo" data-precio="22000">Agregar</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto" data-categoria="sol">
+          <img src="img/producto-4.svg" alt="Echeveria">
+          <div class="info">
+            <h3>Echeveria</h3>
+            <p>Suculenta pequeña para ventanas soleadas.</p>
+            <div class="fila">
+              <span class="precio">$18.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Echeveria" data-precio="18000">Agregar</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto" data-categoria="maceta">
+          <img src="img/producto-5.svg" alt="Maceta azul">
+          <div class="info">
+            <h3>Maceta azul</h3>
+            <p>Maceta de cerámica de 15 cm con plato.</p>
+            <div class="fila">
+              <span class="precio">$26.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Maceta azul" data-precio="26000">Agregar</button>
+            </div>
+          </div>
+        </article>
+        <article class="producto" data-categoria="maceta">
+          <img src="img/producto-6.svg" alt="Maceta amarilla">
+          <div class="info">
+            <h3>Maceta amarilla</h3>
+            <p>Maceta grande de 22 cm con drenaje.</p>
+            <div class="fila">
+              <span class="precio">$34.000</span>
+              <button class="boton boton-peq agregar" data-nombre="Maceta amarilla" data-precio="34000">Agregar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="beneficios" class="seccion fondo">
+      <div class="contenedor">
+        <h2>¿Por qué comprar en Raíz?</h2>
+        <div class="beneficios">
+          <div class="beneficio"><h3>🚚 Envío en 48 horas</h3><p>Empacamos cada planta con cuidado para que llegue bien.</p></div>
+          <div class="beneficio"><h3>🌱 Garantía de 30 días</h3><p>Si tu planta no sobrevive, te enviamos otra.</p></div>
+          <div class="beneficio"><h3>📖 Guía de cuidado</h3><p>Cada pedido incluye una guía de riego y luz.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="contenedor seccion">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cuánto cuesta el envío?</summary>
+        <p>Es gratis en compras desde $80.000. Antes de ese valor cuesta $8.000.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si mi planta llega dañada?</summary>
+        <p>Envíanos una foto en las primeras 24 horas y la reemplazamos.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir ayuda para escoger?</summary>
+        <p>Sí, escríbenos desde el formulario de contacto y te respondemos el mismo día.</p>
+      </details>
+    </section>
+
+    <section id="contacto" class="seccion fondo">
+      <div class="contenedor contacto">
+        <h2>Contáctanos</h2>
+        <form id="formulario" novalidate>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre">
+          <span class="error" id="errorNombre"></span>
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo">
+          <span class="error" id="errorCorreo"></span>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4"></textarea>
+          <span class="error" id="errorMensaje"></span>
+
+          <button type="submit" class="boton">Enviar mensaje</button>
+          <p id="respuesta"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor pie">
+      <p><strong>Raíz</strong><br>Plantas y macetas a domicilio</p>
+      <p>Medellín, Colombia<br>hola@raiz.com</p>
+      <p>Lunes a sábado<br>8:00 a. m. a 6:00 p. m.</p>
+    </div>
+    <p class="derechos">© 2026 Raíz - Proyecto académico</p>
+  </footer>
+
+  <!-- Panel lateral del carrito -->
+  <div id="fondo" class="fondo-oscuro"></div>
+  <aside id="panel" class="panel">
+    <div class="panel-cabecera">
+      <h2>Mi carrito</h2>
+      <button id="btnCerrar" class="cerrar" aria-label="Cerrar">✕</button>
+    </div>
+    <p id="vacio">Aún no has agregado productos.</p>
+    <ul id="lista"></ul>
+    <div class="panel-pie">
+      <p class="total">Total: <span id="total">$0</span></p>
+      <button id="btnComprar" class="boton">Finalizar compra</button>
+      <button id="btnVaciar" class="boton boton-claro">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <div id="aviso" class="aviso"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
